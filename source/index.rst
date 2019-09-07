@@ -7,7 +7,7 @@ Welcome to Radiation_Damage_Calculation's documentation!
 ========================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    introduction
    NeutronDamage
