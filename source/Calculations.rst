@@ -1,10 +1,22 @@
 Calculations
 ===============
-That has a paragraph about a main subject and is set when the '='
-is at least the same length of the title itself.
+
+In this section,I will show some interesting calculations and relative problems in my 
+research time.I think these can help me and you a lot if you are interested in my research.
+Also,if you encounter some problems,you can email me and I am very glad to communicate with you. 
  
+Python Calculations
+----------------------
+
+Basic Calculations
+^^^^^^^^^^^^^^^^^^^
+
+
 Python Problems
-----------------
+^^^^^^^^^^^^^^^^^
+
+**Problem 1**
+
 Sometimes we may suffer some problems of python intepreters in Ubuntu system.And we should know
 how to change python intepreter.我们使用update-alternatives来为整个系统更改python默认版本
 
@@ -21,13 +33,5 @@ how to change python intepreter.我们使用update-alternatives来为整个系�
 
 
  
-Lists can be unnumbered like:
- 
- * Item Foo
- * Item Bar
- 
-Or automatically numbered:
- 
- #. Item 1
- #. Item 2
+
  

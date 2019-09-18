@@ -82,7 +82,6 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Simulations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#molecular-dynamics">Molecular Dynamics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#root-data-analysis-framework">ROOT-Data Analysis Framework</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#installing-the-root">Installing the Root</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting started</a></li>
@@ -90,7 +89,18 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#geant4">Geant4</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Getting started</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exampleb1">ExampleB1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#geometry-definition">Geometry Definition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#physics-list">Physics List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#action-intialization">Action Intialization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#primary-generator">Primary Generator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#detector-response">Detector Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#project1-energy-depositions-subject">Project1:Energy Depositions subject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project2-pka-spectrum">Project2: PKA spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#somenotes">SomeNotes</a></li>
 </ul>
 </li>
 </ul>
@@ -165,25 +175,6 @@
 <h1>Simulations<a class="headerlink" href="#simulations" title="Permalink to this headline">¶</a></h1>
 <p>That has a paragraph about a main subject and is set when the ‘=’
 is at least the same length of the title itself.</p>
-<div class="section" id="molecular-dynamics">
-<h2>Molecular Dynamics<a class="headerlink" href="#molecular-dynamics" title="Permalink to this headline">¶</a></h2>
-<p>Subtitles are set with ‘-‘ and are required to have the same length
-of the subtitle itself, just like titles.</p>
-<p>Lists can be unnumbered like:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Item Foo</p></li>
-<li><p>Item Bar</p></li>
-</ul>
-</div></blockquote>
-<p>Or automatically numbered:</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li><p>Item 1</p></li>
-<li><p>Item 2</p></li>
-</ol>
-</div></blockquote>
-</div>
 <div class="section" id="root-data-analysis-framework">
 <h2>ROOT-Data Analysis Framework<a class="headerlink" href="#root-data-analysis-framework" title="Permalink to this headline">¶</a></h2>
 <p>Root is a modular scientific software toolkit.It provides all the functionalities needed to
@@ -212,7 +203,46 @@ you can use the following commands.</p>
 <h3>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
 <p>Root的基本语法可以参考官网，官网也是上手最快、获取帮助最直接的地方；此外大家记得将root目录下的tutorials
 文件夹拷贝到特定的root学习文件夹，比如root_task目录下，因为这里面的好多例子是需要我们结合自己的
-研究情况或者作图方式要时刻去参考的，大家要随时去查阅相关命令。</p>
+研究情况或者作图方式要时刻去参考的，大家要随时去查阅相关命令。具体的内容如下：</p>
+<ul class="simple">
+<li><p><strong>fft</strong>:Fast Fourier Transform with the fftw package</p></li>
+<li><p><strong>fit</strong>:Several examples illustrating minimization/fittting</p></li>
+<li><p><strong>foam</strong>:Random generator in multi-dimensional space</p></li>
+<li><p><strong>geom</strong>:Examples of use of the geometry package (TGeo classes)</p></li>
+<li><p><strong>gl</strong>:Visulisation withOpenGL</p></li>
+<li><p><strong>graphics</strong>:Basic graphics</p></li>
+<li><p><strong>graphs</strong>:Use of TGraph,TGraphErrors,etc</p></li>
+<li><p><strong>gui</strong>:Scripts to create Graphics User Interface</p></li>
+<li><p><strong>hist</strong>:Histogram</p></li>
+<li><p><strong>image</strong>:Image Processing</p></li>
+<li><p><strong>io</strong>:Input/Output</p></li>
+<li><p><strong>math</strong>:Maths and Statistica functions</p></li>
+<li><p><strong>matrix</strong>:Matrices (TMatrix) examples</p></li>
+<li><p><strong>mlp</strong>:Neural networks with TMultiLayerPerceptron</p></li>
+<li><p><strong>net</strong>:Network classes (client/server examples)</p></li>
+<li><p><strong>physics</strong>:LorentzVectors,phase space</p></li>
+<li><p><strong>pyroot</strong>:python tutorials</p></li>
+<li><p><strong>pythia</strong>:Example with pythia6</p></li>
+<li><p><strong>quadp</strong>:Quadratic Programming</p></li>
+<li><p><strong>smatrix</strong>:Matrices with a templated package</p></li>
+<li><p><strong>spectrum</strong>:Peak finder,background,deconvolutions</p></li>
+<li><p><strong>splot</strong>:Example of the TSplot class (Signal/background estimator)</p></li>
+<li><p><strong>sql</strong>:Interfaces to SQL (mysql,oracle,etc)</p></li>
+<li><p><strong>thread</strong>:Using threads</p></li>
+<li><p><strong>tree</strong>:Creating Trees,Playing with Trees</p></li>
+<li><p><strong>unuran</strong>:Interface with the unuran random generator library</p></li>
+<li><p><strong>xml</strong>:Writing/Reading xml files</p></li>
+</ul>
+<p><strong>Fit examples</strong></p>
+<img alt="_images/fit.jpg" src="_images/fit.jpg" />
+<p><strong>Geometry examples</strong></p>
+<img alt="_images/geometry.jpg" src="_images/geometry.jpg" />
+<p><strong>Graph examples</strong></p>
+<img alt="_images/graph.jpg" src="_images/graph.jpg" />
+<p><strong>Histogram examples</strong></p>
+<img alt="_images/hist.jpg" src="_images/hist.jpg" />
+<p><strong>Math examples</strong></p>
+<img alt="_images/math.jpg" src="_images/math.jpg" />
 <p>好了接下来开始我们的root学习之旅，无论你学习root的出发点是什么，我相信它必定会变成你一款未来你爱不释手的
 工具，接下来我主要重点讲解root应用的几个方面：</p>
 <ol class="arabic simple">
@@ -246,8 +276,27 @@ root脚本文件开展工作吧。</p>
 </div>
 <div class="section" id="geant4">
 <h2>Geant4<a class="headerlink" href="#geant4" title="Permalink to this headline">¶</a></h2>
+<p>Geant4 is a Monte Carlo software toolkit to simulate the passage of particles through matter.
+It is for detector simulation of research in <strong>high energy physics</strong>, <strong>nuclear physics</strong> and
+<strong>cosmic ray physics</strong>.Also it is for application in <strong>space science</strong>, <strong>radiological science</strong> and
+<strong>radiation background calculation</strong> etc.</p>
 <div class="section" id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>First you should install the CMake.</p></li>
+<li><p>And use the following commands to install the appropriate library: sudo apt-get libgl1-mesa-dev libglu1-mesa-dev libxt-dev libXmu-dev libXi-dev zlib1g-dev libgl2ps-dev libexpat1-dev libxerces-c-dev.</p></li>
+<li><p>Then you can download the Source files and Data library files.</p></li>
+<li><p>First make a directory <strong>Geant4</strong> and make corresponding directories of <strong>geant4-build</strong> <strong>geant4-install</strong> and <strong>geant4-projects</strong> to complie、install and run your geant4 projects; then <strong>tar -zxvf source.file</strong> in the Geant4 directory.</p></li>
+<li><p>cd geant4-build.</p></li>
+<li><p>cmake -DCMAKE_INSTALL_PREFIX=/PATH/geant4-install -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_GDML=ON ../geant4.10.05.</p></li>
+<li><p>make -jN.</p></li>
+<li><p>make install.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to use the various Geant4 Libraries,we should add the <strong>Geant4 Libraries</strong>
+path to add into the <strong>.bashrc</strong> file,then you complete the installation.</p>
+</div>
 <ol class="arabic simple">
 <li><p>安装cmake.</p></li>
 </ol>
@@ -266,7 +315,7 @@ ant4–[geant4.10.05,geant4-build,geant4-install,geant4-projects].
 </div>
 <div class="section" id="id1">
 <h3>Getting started<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p><strong>运行例子</strong>：接下来我们就可以运行Geant4提供的例子运行并学习修改，其中geant4.10.05/examples/里面的
+<p><strong>Run examples</strong>：接下来我们就可以运行Geant4提供的例子运行并学习修改，其中geant4.10.05/examples/里面的
 basic中的例子最为简单，供入门学习，接下来我们先运行B1例子为例进行讲解：</p>
 <ol class="arabic simple">
 <li><p>将B1例子拷贝到我们前面建立的geant4-projects中(对于后面的项目也类似)；</p></li>
@@ -286,6 +335,386 @@ basic中的例子最为简单，供入门学习，接下来我们先运行B1例�
 <p>5. 在你导入文件后，你会发现有许多报错语句#include” .hh”,这是点击报错语句前的“小灯泡”，
 选择Edit includePath Setting,这是打开c_cpp_properties.json文件，修改其中的“includePath”,在后面添加
 相应的头文件的路径就好.”/home/day/materials/Geant4/geant4-projects/B1/include”,”/home/day/materials/Geant4/geant4-install/include/Geant4”.</p>
+<div class="section" id="exampleb1">
+<h4>ExampleB1<a class="headerlink" href="#exampleb1" title="Permalink to this headline">¶</a></h4>
+<p>In this section,I will describe the example B1 in detalis.If you want to learn the <a class="reference external" href="https://cmake.org/">CMake</a>
+tutorial systematiclly,you can refer to a very <a class="reference external" href="https://www.hahack.com/codes/cmake/">useful tutorial</a> for beginners
+which is  good information for your learnings.First let’s have a look
+at the directory structure which is same as the CMake C++ files.</p>
+<img alt="_images/file1.jpg" src="_images/file1.jpg" />
+<p>It demonstrates a very simple but useful application where an energy deposit is accounted in
+user actions and their associated objects and a dose in a selected volume is calculated.When you
+build and run the exampleB1,its model structure shows as follow:</p>
+<img alt="_images/g4_00.png" src="_images/g4_00.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In my opinion,you should regard the Geant4 simulations as a Cmake process which make you
+complie and run a whole C++ project and you should read the <strong>main.cxx</strong> file firstly.It can
+make you understood the program structure and learn the simulation process when you begin
+you Geant4 works.In the next moment,you need to change its geometry、physics lists and other
+events in the <strong>src</strong> directory.</p>
+</div>
+<p>Let’s start our simulation,please pay attention to <strong>main funtion</strong> in your project directory at
+any time.You can get the Geant4 Simulation process from the <strong>main function</strong> and its initial
+setting 、intermediate run and output results commands.Okay,Lets’s have a look at <strong>exampleB1.cc</strong>:</p>
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">//</span>
+<span class="c1">// ********************************************************************</span>
+<span class="c1">// * License and Disclaimer                                           *</span>
+<span class="c1">// *                                                                  *</span>
+<span class="c1">// * The  Geant4 software  is  copyright of the Copyright Holders  of *</span>
+<span class="c1">// * the Geant4 Collaboration.  It is provided  under  the terms  and *</span>
+<span class="c1">// * conditions of the Geant4 Software License,  included in the file *</span>
+<span class="c1">// * LICENSE and available at  http://cern.ch/geant4/license .  These *</span>
+<span class="c1">// * include a list of copyright holders.                             *</span>
+<span class="c1">// *                                                                  *</span>
+<span class="c1">// * Neither the authors of this software system, nor their employing *</span>
+<span class="c1">// * institutes,nor the agencies providing financial support for this *</span>
+<span class="c1">// * work  make  any representation or  warranty, express or implied, *</span>
+<span class="c1">// * regarding  this  software system or assume any liability for its *</span>
+<span class="c1">// * use.  Please see the license in the file  LICENSE  and URL above *</span>
+<span class="c1">// * for the full disclaimer and the limitation of liability.         *</span>
+<span class="c1">// *                                                                  *</span>
+<span class="c1">// * This  code  implementation is the result of  the  scientific and *</span>
+<span class="c1">// * technical work of the GEANT4 collaboration.                      *</span>
+<span class="c1">// * By using,  copying,  modifying or  distributing the software (or *</span>
+<span class="c1">// * any work based  on the software)  you  agree  to acknowledge its *</span>
+<span class="c1">// * use  in  resulting  scientific  publications,  and indicate your *</span>
+<span class="c1">// * acceptance of all terms of the Geant4 Software license.          *</span>
+<span class="c1">// ********************************************************************</span>
+<span class="c1">//</span>
+<span class="c1">// $Id: exampleB1.cc 86065 2014-11-07 08:51:15Z gcosmo $</span>
+<span class="c1">//</span>
+<span class="c1">/// \file exampleB1.cc</span>
+<span class="c1">/// \brief Main program of the B1 example</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;B1DetectorConstruction.hh&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;B1ActionInitialization.hh&quot;</span><span class="cp"></span>
+
+<span class="cp">#ifdef G4MULTITHREADED</span>
+<span class="cp">#include</span> <span class="cpf">&quot;G4MTRunManager.hh&quot;</span><span class="cp"></span>
+<span class="cp">#else</span>
+<span class="cp">#include</span> <span class="cpf">&quot;G4RunManager.hh&quot;</span><span class="cp"></span>
+<span class="cp">#endif</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;G4UImanager.hh&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;QBBC.hh&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;G4VisExecutive.hh&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;G4UIExecutive.hh&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;Randomize.hh&quot;</span><span class="cp"></span>
+
+<span class="c1">//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span><span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="c1">// Detect interactive mode (if no arguments) and define UI session</span>
+  <span class="c1">//</span>
+  <span class="n">G4UIExecutive</span><span class="o">*</span> <span class="n">ui</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">argc</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">ui</span> <span class="o">=</span> <span class="n">new</span> <span class="n">G4UIExecutive</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Choose the Random engine</span>
+  <span class="n">G4Random</span><span class="o">::</span><span class="n">setTheEngine</span><span class="p">(</span><span class="n">new</span> <span class="n">CLHEP</span><span class="o">::</span><span class="n">RanecuEngine</span><span class="p">);</span>
+  
+  <span class="c1">// Construct the default run manager</span>
+  <span class="c1">//</span>
+<span class="cp">#ifdef G4MULTITHREADED</span>
+  <span class="n">G4MTRunManager</span><span class="o">*</span> <span class="n">runManager</span> <span class="o">=</span> <span class="n">new</span> <span class="n">G4MTRunManager</span><span class="p">;</span>
+  <span class="n">runManager</span><span class="o">-&gt;</span><span class="n">SetNumberOfThreads</span><span class="p">(</span><span class="n">G4Threading</span><span class="o">::</span><span class="n">G4GetNumberOfCores</span><span class="p">());</span>
+<span class="cp">#else</span>
+  <span class="n">G4RunManager</span><span class="o">*</span> <span class="n">runManager</span> <span class="o">=</span> <span class="n">new</span> <span class="n">G4RunManager</span><span class="p">;</span>
+<span class="cp">#endif</span>
+
+  <span class="c1">// Set mandatory initialization classes</span>
+  <span class="c1">//</span>
+  <span class="c1">// Detector construction</span>
+  <span class="n">runManager</span><span class="o">-&gt;</span><span class="n">SetUserInitialization</span><span class="p">(</span><span class="n">new</span> <span class="n">B1DetectorConstruction</span><span class="p">());</span>
+
+  <span class="c1">// Physics list</span>
+  <span class="n">G4VModularPhysicsList</span><span class="o">*</span> <span class="n">physicsList</span> <span class="o">=</span> <span class="n">new</span> <span class="n">QBBC</span><span class="p">;</span>
+  <span class="n">physicsList</span><span class="o">-&gt;</span><span class="n">SetVerboseLevel</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">runManager</span><span class="o">-&gt;</span><span class="n">SetUserInitialization</span><span class="p">(</span><span class="n">physicsList</span><span class="p">);</span>
+    
+  <span class="c1">// User action initialization</span>
+  <span class="n">runManager</span><span class="o">-&gt;</span><span class="n">SetUserInitialization</span><span class="p">(</span><span class="n">new</span> <span class="n">B1ActionInitialization</span><span class="p">());</span>
+  
+  <span class="c1">// Initialize visualization</span>
+  <span class="c1">//</span>
+  <span class="n">G4VisManager</span><span class="o">*</span> <span class="n">visManager</span> <span class="o">=</span> <span class="n">new</span> <span class="n">G4VisExecutive</span><span class="p">;</span>
+  <span class="c1">// G4VisExecutive can take a verbosity argument - see /vis/verbose guidance.</span>
+  <span class="c1">// G4VisManager* visManager = new G4VisExecutive(&quot;Quiet&quot;);</span>
+  <span class="n">visManager</span><span class="o">-&gt;</span><span class="n">Initialize</span><span class="p">();</span>
+
+  <span class="c1">// Get the pointer to the User Interface manager</span>
+  <span class="n">G4UImanager</span><span class="o">*</span> <span class="n">UImanager</span> <span class="o">=</span> <span class="n">G4UImanager</span><span class="o">::</span><span class="n">GetUIpointer</span><span class="p">();</span>
+
+  <span class="c1">// Process macro or start UI session</span>
+  <span class="c1">//</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="n">ui</span> <span class="p">)</span> <span class="p">{</span> 
+    <span class="c1">// batch mode</span>
+    <span class="n">G4String</span> <span class="n">command</span> <span class="o">=</span> <span class="s">&quot;/control/execute &quot;</span><span class="p">;</span>
+    <span class="n">G4String</span> <span class="n">fileName</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+    <span class="n">UImanager</span><span class="o">-&gt;</span><span class="n">ApplyCommand</span><span class="p">(</span><span class="n">command</span><span class="o">+</span><span class="n">fileName</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="p">{</span> 
+    <span class="c1">// interactive mode</span>
+    <span class="n">UImanager</span><span class="o">-&gt;</span><span class="n">ApplyCommand</span><span class="p">(</span><span class="s">&quot;/control/execute init_vis.mac&quot;</span><span class="p">);</span>
+    <span class="n">ui</span><span class="o">-&gt;</span><span class="n">SessionStart</span><span class="p">();</span>
+    <span class="n">delete</span> <span class="n">ui</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Job termination</span>
+  <span class="c1">// Free the store: user actions, physics_list and detector_description are</span>
+  <span class="c1">// owned and deleted by the run manager, so they should not be deleted </span>
+  <span class="c1">// in the main() program !</span>
+  
+  <span class="n">delete</span> <span class="n">visManager</span><span class="p">;</span>
+  <span class="n">delete</span> <span class="n">runManager</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo.....</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="geometry-definition">
+<h4>Geometry Definition<a class="headerlink" href="#geometry-definition" title="Permalink to this headline">¶</a></h4>
+<p>When you start your research work,you should define a detector geometry firstly,a detector
+geometry in Geant4 is made of a number of volumes.The largest volume is called the <strong>World</strong>
+volume.It must contain,with some margin,all other volumes in the detector geometry.The other
+volumes are created and placed inside previous volumes,included in the World volume.The most
+simple (and efficient) shape to describe the World is a box.</p>
+<p>Each volume is created by describing its shape and its physical characteristics,and then placing
+it inside a containing volume.When a volume is placed within another volume,we call the former
+volume the daughter volume and the latter the mother volume.The coordinate system used to specify
+where the daughter volume is placed,is the coordinate system of the mother volume.</p>
+<p>To describe a volume’s shape,we use the concept of a solid.A solid is a geometrical object that
+has a shape and specific values for each of that shape’s dimensions.To describe a volume’s full
+properties,we use a logical volume.It includes the geometrical properties of the solid,and adds
+physical characteristics:the material of the volume;whether it contains any sensitive detector
+elements;the magnetic field;etc.</p>
+<p>And the following picture give a sense to define detector geometry, <strong>G4VSolid</strong> use to define
+the simulation structure’s shape and size, <strong>G4LogicalVolume</strong> give different volumes’ dependency
+about daughter volums、materials、sentivity、user limits etc and  <strong>G4VPhysicalVolume</strong> give
+a full description of model’s position and other messages(rotation).</p>
+<img alt="_images/Geo.jpg" src="_images/Geo.jpg" />
+</div>
+<div class="section" id="physics-list">
+<h4>Physics List<a class="headerlink" href="#physics-list" title="Permalink to this headline">¶</a></h4>
+<p>Geant4 offers</p>
+<ol class="arabic simple">
+<li><p>Electromagnetic(EM) processes</p></li>
+<li><p>Hadronic processes</p></li>
+<li><p>Photo-hadron and lepto-hadron processes</p></li>
+<li><p>Optical photon processes</p></li>
+<li><p>Decay processes</p></li>
+<li><p>Shower parameterization</p></li>
+<li><p>Event biasing techniques</p></li>
+<li><p>You can plug-in more</p></li>
+</ol>
+</div>
+<div class="section" id="action-intialization">
+<h4>Action Intialization<a class="headerlink" href="#action-intialization" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="primary-generator">
+<h4>Primary Generator<a class="headerlink" href="#primary-generator" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="detector-response">
+<h4>Detector Response<a class="headerlink" href="#detector-response" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="project1-energy-depositions-subject">
+<h3>Project1:Energy Depositions subject<a class="headerlink" href="#project1-energy-depositions-subject" title="Permalink to this headline">¶</a></h3>
+<p>In this project,I will show the dose/energy depositions distributions in the Titanium Dioxide
+along the incident photon beam.And the simulation model is illustrated as following picture.</p>
+<img alt="_images/g1_00.jpg" src="_images/g1_00.jpg" />
+<p>In this</p>
+</div>
+<div class="section" id="project2-pka-spectrum">
+<h3>Project2: PKA spectrum<a class="headerlink" href="#project2-pka-spectrum" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="somenotes">
+<h3>SomeNotes<a class="headerlink" href="#somenotes" title="Permalink to this headline">¶</a></h3>
+<p>We can use Geant4 examples to do the research workks and learns which is showed following
+paragraph.</p>
+<p><strong>Basic examples</strong>:These basic examples is oriented to beginners and covering many basic general
+use-cases typical of an “application”-oriented kind of development.</p>
+<ol class="arabic simple">
+<li><p>ExampleB1</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Simple geometry with a few solids using simple placements (G4PVPlacement)</p></li>
+<li><p>Scoring <strong>total dose</strong> in a selected volume user action classes</p></li>
+<li><p>Using G4Accumulable for automatic merging of scored values in multi-threading mode</p></li>
+<li><p>Geant4 Physics list (QBCC)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>ExampleB2</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Simplified tracker geometry with global constant magnetic field</p></li>
+<li><p>Geometry with simple placements (G4PVPlacement) and parameterisation (G4PVParameterisation)</p></li>
+<li><p>Scoring within tracker via G4 <strong>sensitive detector</strong> and <strong>hits</strong></p></li>
+<li><p>Geant4 physiics list (FTFP_BERT) with step limiter</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>ExampleB3</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Schematic Positron Emitted Tomography(PET) system</p></li>
+<li><p>Geometry with simple placements with rotation (G4PVPlacement)</p></li>
+<li><p>Radioative source</p></li>
+<li><p>Scoring within <strong>Crystals</strong> via <strong>G4 scores</strong></p></li>
+<li><p>Using G4Accumulable for automatic merging of scored values in multi-threading mode (a)
+and G4StatAnalysis for accumulating statistics (b)</p></li>
+<li><p>Modular physics list built via builders provided in Geant4</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>ExampleB4</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Simplified calorimeter with layers of two materials</p></li>
+<li><p>Geometry with replica(复制-划分/分割) (G4PVReplica)</p></li>
+<li><p>Scoring within layers in four ways: via <strong>user action</strong> (a),via <strong>user own object</strong> (b),
+via <strong>G4 sensitive detector</strong> and <strong>hits</strong> (c) and via <strong>scores</strong> (b)</p></li>
+<li><p>Geant4 physics list (FTFP_BERT)</p></li>
+<li><p>Histogram (1D) and ntuple saved in the output file</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is note text,when we use the <strong>theParticleIterator</strong> in Geant4 file,you should
+replace it with <strong>auto theParticleIterator –&gt; GetParticleIterator</strong>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is a warning text.Geant4</p>
+</div>
 <p>Basics of Monte Carlo Simulation</p>
 <blockquote>
 <div><ul class="simple">
